@@ -3,7 +3,7 @@ let current_songs = new Audio();
 let songs;
 async function songs_fetch() {
 
-    let a = await fetch('./assets/songs')
+    let a = await fetch('https://github.com/Abhishekhash101/spotifyclone/tree/main/assets/songs/')
     let response = await a.text()
     // console.log(response)
 
