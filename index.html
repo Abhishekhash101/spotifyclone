@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlity.css">
+</head>
+
+<body>
+    <nav class="navbar flex" id="navbar_hidded_show" style="background-color: black;">
+        <!-- Logo -->
+        <img src="assets/logo.svg" class="invert" alt="">
+
+        <!-- Left Side: Home + Search -->
+        <div class="home_searchbar flex">
+            <img src="assets/home.svg" class="home invert" alt="Home">
+
+            <div class="search-container">
+                <img src="assets/search.svg" class="invert home" alt="Search">
+                <input type="text" placeholder="What do you want to play?">
+                <div class="search-right">
+                    <!-- <div class="divider-vertical"></div> -->
+                    <img src="assets/browse.svg" class="invert home" alt="Browse">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Nav -->
+        <div class="other_navbar_supplies flex">
+            <a href="#">Premium</a>
+            <a href="#" class="bold">Support</a>
+            <a href="#">Download</a>
+
+            <div class="divider"></div>
+
+            <div class="install">
+                <img src="assets/install_app.svg" class="invert" alt="Download">
+                <a href="#">Install App</a>
+            </div>
+
+            <a href="#">Sign up</a>
+
+            <a href="#" id="login-btn">Log in</a>
+        </div>
+    </nav>
+    <!-- left and right container -->
+    <div class="container flex">
+        <div class="left border">
+            <div class="container_lib">
+                <div class="header">Your Library</div>
+                <div class="cross">
+                    <img src="assets/close.svg" class="invert" srcset="">
+                </div>
+            </div>
+            <div class="song_list">
+                <ul>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <div class="flex legal_div_parent">
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    </div>
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    </div>
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+                    <div class="leagal_div">
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right border">
+            <div class="box_content">
+                <div class="hamberburgre_container">
+                    <div class="hamberger invert">
+                        <img src="assets/hamburger.svg" alt="" srcset="">
+                    </div>
+                    <div class="header_right">
+                        Trending Songs
+                    </div>
+                </div>
+                <div class="card_container flex">
+                    <div class="songcard">
+                        <div class="thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt=""
+                                srcset="">
+                        </div>
+                        <div class="song_name">
+                            Sapphire
+                        </div>
+                        <div class="author_name">
+                            Ed Sheeran
+                        </div>
+                    </div>
+
+                    <div class="songcard">
+                        <div class="thumbnail">
+                            <img src="https://i.scdn.co/image/ab67616d00001e026fbb60d6a7e03ccb940a518e" alt=""
+                                srcset="">
+                        </div>
+                        <div class="song_name">
+                            Sapphire
+                        </div>
+                        <div class="author_name">
+                            Ed Sheeran
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playback_container">
+                <div class="playback">
+                    <div class="song_info_playback">
+                        <div class="song_info ">
+
+                        </div>
+                        <div class="timeandvol">
+
+                            <div class="song_time ">
+
+                            </div>
+                            <div class="volume">
+                                <img src="assets/volume.svg" class="invert" width="17px" alt="" srcset="">
+                                <input type="range" class="range">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playback_buttons">
+                        <img id="previous_song" src="assets/prevsong.svg" class="home invert" style="cursor: pointer;"
+                            alt="" srcset="">
+                        <img id="play_song" src="assets/play.svg" alt="" class="home invert" style="cursor: pointer;"
+                            srcset="">
+                        <img id="next_song" src="assets/nextsong.svg" alt="" class="home invert"
+                            style="cursor: pointer;" srcset="">
+                    </div>
+
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
